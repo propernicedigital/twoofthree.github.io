@@ -119,7 +119,11 @@ In the `body` you will put all the **interface elements** that are visible to th
 
 We're going to create a HTML version of your CV, you can use this to send off to potential clients or employers later on.
 
-Open "demo-cv" to see the sample. 
+1. Create a new folder and name is cv
+2. Create a file named `index.html`
+3. Past the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/starting-template.html into your index file.
+4. Create a `styles.css` file
+5. Paste the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/styles.css into your styles file.
 
 #### Dropdown
 

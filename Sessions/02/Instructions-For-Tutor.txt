@@ -1,0 +1,7 @@
+1) Go through basics of html readme
+2) Everyone setup CV project (create /cv directory)
+3) Copy starting-template.html and styles.css into this directory
+4) Show everyone you coding a CV and people follow along
+5) Give everyone 30 minutes to finish CV using the index.html file as the base
+
+https://github.com/twoofthree/twoofthree.github.io/tree/master/demo-cv

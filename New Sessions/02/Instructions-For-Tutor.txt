@@ -1,4 +1,0 @@
-1) Go through basics of html readme
-2) Everyone setup CV project
-3) Show everyone you coding a CV and people follow along
-4) Give everyone 30 minutes to finish CV

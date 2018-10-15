@@ -1,5 +1,0 @@
-
-1) Introductions, introduce self and class
-2) Run through slides about FEWD
-3) Install github and atom
-4) Push to github
