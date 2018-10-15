@@ -36,7 +36,16 @@ For example, this is how you wrap a paragraph of text in `p` tags:
 
 `p` stands for *paragraph*, of course.
 
-#### HTML skeleton
+## Excercise - Your CV
+
+We're going to create a HTML version of your CV, you can use this to send off to potential clients or employers later on.
+1. Create a new folder and name it cv
+2. Create a file named `index.html`
+3. Create a `styles.css` file
+4. Paste the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/styles.css into your styles file.
+
+
+### HTML skeleton
 
 Every HTML document, at the bare bones, needs to have this structure.
 
@@ -71,55 +80,90 @@ In the `body` you will put all the **interface elements** that are visible to th
 
 ## Let's start building
 
-#### Sections
+### Header/main/footer
 
-> Inside the `body`, add in two `<section>` elements
+You can use the `<header></header>` tag to identify an area as the header of the document/component. You can also use `<main></main>` to contain the main sections of your page and `<footer></footer>` to place a footer.
+
+> Inside the `body`, add in a `<header>` element
 
 ```html
 <body>
-	<section></section>
-	<section></section>
+	<header>
+
+	</header>
 </body>
 ```
-
-#### Headings
-
-![](assets/headings.jpg)
-
-> Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
+> Inside the header place a div and give it a class attribute of `container`
 
 ```html
-<section>
-	...
-	<h1>Your app name</h2>
-	<h2>What it does</h2>
-</section>
+<div class="container">
+
+</div>
 ```
 
-#### Paragraphs
-
-> Write a paragraph to explain how your app works, and what you want people to do first.  
+> Inside there create two divs, one will be the left hand side one will be the right
 
 ```html
-<section>
-	...
-	<p>Swap skills and time with people in your community!</p>
-  	<p>Just choose an activity to get started.</p>
-</section>
+<div>
+
+</div>
+<div>
+
+</div>
 ```
 
+Div's are devision tags, they are used to devide up content on your page and will tend to be the main HTML element you use to create blocks.
+
+### Headings
+
+![](headings.jpg)
+
+> Inside the first div, write two titles a `<h1>` and a `<h2>`
+
+```html
+	<h1>Your name</h2>
+	<h2>Your job title</h2>
+```
+
+### Paragraphs
+
+> Write a paragraph to contain your contact information, add `<br />` tag to break to a new line
+
+```html
+<p>
+
+</p>
+```
 `p` is for *paragraph*
 
-## Excercise - Your CV
+### Sections
 
-We're going to create a HTML version of your CV, you can use this to send off to potential clients or employers later on.
+Sections are good to seperate your content into blocks.
 
-1. Create a new folder and name is cv
-2. Create a file named `index.html`
-3. Past the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/starting-template.html into your index file.
-4. Create a `styles.css` file
-5. Paste the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/styles.css into your styles file.
+> Add a `<main>` element, then add a `section` in the main
 
+### Add your Experience
+
+> Using h2, h3, h4 and p tags add your experience
+
+
+### Lists
+
+In a new section titled skills Add a list of your skills, there are two types of Lists:
+* Odered `<ol></ol>`
+* Unordered `<ul></ul>`
+
+> Create an unordered list and add some items to that list to describe your skills, each list item is added using `<li></li>`
+
+```html
+<ul>
+	<li>List item 1</li>
+	<li>List item 2</li>
+	<li>List item 3</li>
+</ul>
+```
+
+> Finish your CV off with another section titled 'education' this will contain information about your education
 
 # Excercise 2 - Our first web app
 
