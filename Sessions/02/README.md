@@ -38,8 +38,6 @@ For example, this is how you wrap a paragraph of text in `p` tags:
 
 #### HTML skeleton
 
-I've created an HTML skeleton for you, containing the basic **building blocks**: `html`, `head` and `body` tags.
-
 Every HTML document, at the bare bones, needs to have this structure.
 
 <!--
@@ -56,7 +54,7 @@ Every HTML document, at the bare bones, needs to have this structure.
 ```
 -->
 
-![](assets/HTML_doc_setup.jpg)
+![](HTML_doc_setup.jpg)
 
 #### Head
 
