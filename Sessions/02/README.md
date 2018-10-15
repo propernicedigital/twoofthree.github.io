@@ -4,14 +4,11 @@ We're going to learn how to:
 
 * Write HTML to **structure** a web page or app
 	* Create several types of **text** (paragraphs, headings)
+	* Create a HTML CV
 	* Create **inputs** (dropdowns, buttons, text boxes)
 	* Create **links** to other Web pages
 	* Add **images**
-
-* Write CSS to **style** your app interface
-	* Design your app **typography**
-	* Set your app **colours**
-	* **Search** for code online and integrate what you find in your project (that's what coders do most of the time!)
+	* Start a joint web development brief
 
 ## Step by step
 
@@ -125,7 +122,44 @@ We're going to create a HTML version of your CV, you can use this to send off to
 4. Create a `styles.css` file
 5. Paste the content of https://github.com/twoofthree/twoofthree.github.io/blob/master/demo-cv/styles.css into your styles file.
 
-#### Dropdown
+
+# Excercise 2 - Our first web app
+
+![alt text](monochrome_moqup.png)
+
+How do you explain what an app is to someone or something who's never seen/used one, like an *alien*?
+
+### What is an app, then?
+
+There is no clear-cut definition of *app*.
+
+For the sake of this course, we like to think of apps as small **digital tools** that are **connected** to the Web.
+
+To use an analogy, if the internet is like a *library* an app is like a *ladder*, which you use to help access specific books. In this case books are like websites, or web services such as databases.
+
+Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
+
+This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
+
+Good apps do **one thing**, and do it well.
+
+## The brief
+
+We've been asked by a client to make a one page web app:
+
+* Intro, logo, title, description
+* Dropdown and button to filter some data
+* Display a list of that data on click of button
+
+## More HTML
+
+Let's open our index.html file in the root of our repo, if you haven't created this yet, let's create a new file and name it `index.html`
+
+Let's grab the starting document html and paste it into our index file:
+
+https://github.com/twoofthree/twoofthree.github.io/blob/master/Resources/starting-page.html
+
+### Dropdown
 
 This is the first interactive element of your app.
 
@@ -145,7 +179,7 @@ It's a set of `options` that people can choose from.
 </section>
 ```
 
-#### Button
+### Button
 
 > Next you'll need a `Find` or `Search` button. What do you think is the HTML code to make a button?
 
@@ -159,7 +193,7 @@ It's a set of `options` that people can choose from.
 </section>
 ```
 
-#### Hyperlinks
+### Hyperlinks
 
 ![](assets/links_inside_paragraphs.jpg)
 
@@ -179,7 +213,7 @@ You can add **hyperlinks** to our content using the `a` element.
 </body>
 ```
 
-#### Fancy logo
+### Fancy logo
 
 ![](assets/hipsterlogogenerator.png)
 
@@ -225,6 +259,7 @@ If you're taking an image from the web you need to use the link to the image alo
 ```
 
 Don't worry just now if it's too big, we'll resize it later on.
+
 
 
 ### License
