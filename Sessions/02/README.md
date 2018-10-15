@@ -303,6 +303,9 @@ If you're taking an image from the web you need to use the link to the image alo
 Don't worry just now if it's too big, we'll resize it later on.
 
 
+# If there's extra time
+
+If there's extra time, let's go back to our CV and add a profile image. We can even have a sneak peak at some CSS and learn how to resize it and add some padding
 
 ### License
 
