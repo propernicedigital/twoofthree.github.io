@@ -1,17 +1,25 @@
 # CSS Crash Course
 
+## Index
+
+* CSS Crash Course
+* CV Styling Exercise
+* Begin creating elements for our group app project
+
 Now the stylish part: **CSS**!
 
-There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
+Let's create a new css file in the root of your repo, and name it `styles.css`.
+
+Let's add a `link` to the `head` of your app which points to that CSS file called **styles.css**. This is where you add your own styles.
 
 ```html
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles.css">
 ```
 
 You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
 
 
-#### CSS basics
+## CSS basics
 
 You use CSS to style HTML.
 
@@ -25,7 +33,7 @@ selector
 }
 ```
 
-The part before the curly brackets `{` and `}` is the **selector**. This ***selects* the element** from your HTML document.
+The part before the curly brackets `{` and `}` is the **selector**. This ***selects*** the element from your HTML document.
 
 In CSS you can select multiple HTML elements in one go.
 
@@ -40,7 +48,7 @@ p
 
 CSS **properties** define how HTML elements are displayed.
 
-![](assets/css_layout.jpg)
+![](css_layout.jpg)
 
 The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
 
@@ -55,7 +63,15 @@ p
 
 ... will turn *every* paragraph in your HTML green.
 
-#### Play around a bit
+### Hex colours
+
+Colours in CSS are identified by either using the name of the colour eg `red` or by using a *hex code*. Hex codes are colour codes that identify a specific colour tone of a colour. eg `#ff0000` will return a red colour.
+
+You can use a colour wheel to find your hex code, a useful one can be found at [Paletton](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF).
+
+### Play around a bit
+
+Let's go back to our HTML cv's, try changing the css around a bit, customize the colors, fonts and borders to get familiar with CSS.
 
 > Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
 
@@ -66,13 +82,13 @@ p
 
 > What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
 
-#### Search for solutions!
+### Search for solutions!
 
 Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately.
 
 **All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
 
-#### Inspect websites you like
+### Inspect websites you like
 
 Did you know, you can see the code which has created every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
 
@@ -84,7 +100,7 @@ You can also play with this code and change the way your favourite websites look
 
 > Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
 
-#### Fonts
+### Fonts
 
 Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout.
 
@@ -131,7 +147,7 @@ Then you can set **more specific rules** for headings, paragraphs and bold eleme
 
 > `font-family`, `font-size` and `color` are a great place to start!
 
-#### Background images
+### Background images
 
 You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
@@ -188,7 +204,6 @@ html
 }
 ```  
 
-<!--
 
 * Introduce **Web Inspector**, HTML and CSS tabs.
 
@@ -207,22 +222,8 @@ html
 	* `color`
 	* `border-color`
 	* Check out [Kuler](https://color.adobe.com) and/or [Flat UI colors](https://flatuicolors.com/) for inspirations
- -->
-<!--
-### Final touches
 
-* Media queries
 
-	```css
-	/* if the screen is larger than 600px..  */
-	@media (min-width: 600px) {
-	  body {
-	    max-width: 600px;
-	    margin: auto;
-	    font-size: 1em;
-	  }
-	}
-	```
 * Icons using [FontAwesome](https://fortawesome.github.io/Font-Awesome/)
 
 	```css
@@ -256,7 +257,156 @@ html
 	* [Custom select elements](http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/)
 	* [Minimal form interface](http://tympanus.net/codrops/2014/04/01/minimal-form-interface)
 	* [Natural language form](http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements)
--->
+
+## Thinking inside the **box**
+
+Imagine that there is an **invisible box** around *every* HTML element.
+
+Your browser likes to put code into boxes, boxes inside boxes inside boxes inside boxes...
+
+Each HTML box has:
+
+* `margin` (outside)
+* `border`
+* `padding` (inside)
+
+![](assets/box-model.gif)
+
+<!-- You can use pesticide.io to demonstrate this -->
+
+### Styling interactive elements
+
+#### Dropdown
+
+To style your dropdown, you first need to know how it's called in HTML: `select`
+
+> In `style.css` add a new CSS block
+
+```css
+select
+{
+	background-color: red;
+}
+```
+
+This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour.
+
+![](assets/quick-edit.png)
+
+> Remember how to change the **colour of texts**? It's `color` :us:
+
+```css
+select
+{
+ 	background-color: red;
+ 	color: white;
+}
+```
+
+Last week you integrated a font from [Google Fonts](https://www.google.com/fonts) into your app, which turned everything into your chosen font. Or did it?
+
+The dropdown and buttons are still in the standard browser font.
+
+> How do you **change the font** of your dropdown? It's `font-family`
+
+```css
+select
+{
+ 	background-color: red;
+ 	color: white;
+ 	font-family: 'Lekton'; /* 'Lekton' is our favourite font, you choose your own from https://www.google.com/fonts */
+}
+```
+
+Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
+
+```css
+select
+{
+ 	...
+ 	font-size: 200%;
+}
+```
+
+> Adjust the `font-size` to suit your app content.
+
+Btw `px` stands for *pixels*, which are the little dots that make up the screen. If you go close enough to your computer screen, you'll start seeing the pixels.
+
+### Button
+
+> Add a new CSS block that targets the `button`
+
+```css
+button
+{
+ 	border: none;
+ 	background-color: red;
+ 	cursor: pointer;
+}
+```
+
+> Change the `color` to match your design.
+
+It's good practice to style all *interactive* interface elements the same **colour and prominent**.
+
+Now you can apply some of the styles from the dropdown to the `button`.
+
+> How do you make **rounded corners**? With `border-radius`.
+
+```css
+button
+{
+ 	...
+	border-radius: 10px;
+}
+```
+
+Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
+
+```css
+button
+{
+	...
+   	padding: 10px;
+}
+```
+
+#### Button states
+
+As an interactive element, a `button` should respond to user interactions, through its look & feel.
+
+For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
+
+> Add a new CSS block that targets the `hover` state of your `button`
+
+```css
+button:hover
+{
+ 	color: black;
+}
+```
+
+Now when you roll over the button, its text will turn black.
+
+#### Smooth transitions
+
+Currently the text colour flashes from the normal state to the `hover` state.
+
+> You can make that transition smooth using the `transition` CSS property
+
+```css
+button
+{
+ 	transition: 0.6s;
+}
+```
+
+`s` stands for seconds.
+
+
+## Excercise 2
+
+> Style the elements of your app using the knowledge learned above
 
 ### License
 
