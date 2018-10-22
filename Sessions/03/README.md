@@ -2,22 +2,11 @@
 
 ## Index
 
-* CSS Crash Course
+* CSS basics
 * CV Styling Exercise
 * Begin creating elements for our group app project
 
 Now the stylish part: **CSS**!
-
-Let's create a new css file in the root of your repo, and name it `styles.css`.
-
-Let's add a `link` to the `head` of your app which points to that CSS file called **styles.css**. This is where you add your own styles.
-
-```html
-<link rel="stylesheet" href="css/styles.css">
-```
-
-You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
-
 
 ## CSS basics
 
@@ -71,7 +60,18 @@ You can use a colour wheel to find your hex code, a useful one can be found at [
 
 ### Play around a bit
 
-Let's go back to our HTML cv's, try changing the css around a bit, customize the colors, fonts and borders to get familiar with CSS.
+Let's go back to our HTML cv's, try changing the css around a bit, customize the colors, fonts and borders to get familiar with CSS:
+
+Create a new css file in the root of your repo, and name it `styles.css`.
+
+Let's add a `link` to the `head` of your app which points to that CSS file called **styles.css**. This is where you add your own styles.
+
+```html
+<link rel="stylesheet" href="css/styles.css">
+```
+
+You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
+
 
 > Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
 
@@ -162,9 +162,9 @@ html
 
 You can upload your own image files to Thimble (if they're smaller than 3MB), or use image links from the Web (provided they're licensed for re-use).
 
-For now, we'll use [03difoha.github.io](https://03difoha.github.io), where you can find beautiful, high-res pictures that are free to use for *whatever* purpose you want. Amazing!
+For now, we'll use [Stock Snap](https://stocksnap.io/), where you can find beautiful, high-res pictures that are free to use for *whatever* purpose you want. Amazing!
 
-> 1. Find an image you like on [03difoha.github.io](https://03difoha.github.io)
+> 1. Find an image you like on [Stock Snap](https://stocksnap.io/)
 > 2. Secondary click on the image. (Right click for PC, Two finger click for Mac)
 > 3. **Copy Image Address**. This should copy the images URL to your clipboard. Paste it into a new tab if you don't believe me.
 > 4. **Paste** it in your `style.css` inside the `body` `background-image` rule like so
@@ -172,7 +172,7 @@ For now, we'll use [03difoha.github.io](https://03difoha.github.io), where you c
 ```css
 html
 {
-	background-image: url('https://03difoha.github.io/example.jpg');
+	background-image: url('assets/example.jpg');
 }
 ```
 
@@ -188,7 +188,7 @@ We can achieve that with `background-size`. This property can take various value
 ```css
 html
 {
-	background-image: url('https://03difoha.github.io/example.jpg');
+	background-image: url('assets/example.jpg');
  	background-size: cover;
 }
 ```
@@ -198,15 +198,11 @@ Now the image *covers* the content of your app, ie the `body` but you have proba
 ```css
 html
 {
-	background-image: url('https://03difoha.github.io/example.jpg');
+	background-image: url('assets/example.jpg');
  	background-size: cover;
  	background-attachment: fixed;
 }
 ```  
-
-
-* Introduce **Web Inspector**, HTML and CSS tabs.
-
 
 
 * CSS **comments**
