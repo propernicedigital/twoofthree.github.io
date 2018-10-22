@@ -9,7 +9,8 @@ body {
     background-color: #301C1C;
     margin: 0;
     color: #fff;
-    background-image: url('image-name.jpg');
+    background-image: url('clouds.jpg');
+    background-attachment: fixed;
 }
 
 h1 {
