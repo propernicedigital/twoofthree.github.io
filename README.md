@@ -4,8 +4,11 @@
 
 1. What is a FEWD? Tools Setup
 2. Digging deep into HTML
-3. Digging deep into CSS & intro to dev tools
-4. Recap questionnaire
+3. Digging deep into CSS & intro to dev tools (Add elements do your portfolio)
+4. Recap questionnaire / APP Exercise (HTML elements) / Selectors
+5. Grid layouts / Frameworks (bootstrap) / App Exercise (Style elements)
+6. Digging deep into javascript / jQuery
+7. 
 
 ### License
 

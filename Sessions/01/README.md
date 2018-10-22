@@ -19,8 +19,6 @@ Add
 
 ```
 .DS_Store
-presentations/.sass-cache
-sessions/.sass-cache
 ```
 
 Press save.
@@ -51,4 +49,11 @@ Create an index file and add the following:
 </html>
 ```
 
-This will setup an index to your github Pages
+This will setup an index to your github Pages.
+
+
+## Setting up a basic website project
+
+Let's setup all the basics you need to create your website portfolio. This will contain links to all the projects you work on over this course.
+
+Start by creating a folder and name it `assets` in here you'll create 3 new sub folders, one named `css` one named `js` and one named `images`. Take a guess at what you'll be storing in each folder.

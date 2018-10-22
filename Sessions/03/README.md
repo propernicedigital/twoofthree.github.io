@@ -4,7 +4,7 @@
 
 * CSS basics
 * CV Styling Exercise
-* Begin creating elements for our group app project
+* Begin creating elements for your portfolio
 
 Now the stylish part: **CSS**!
 
@@ -266,7 +266,7 @@ Each HTML box has:
 * `border`
 * `padding` (inside)
 
-![](assets/box-model.gif)
+![](box-model.gif)
 
 <!-- You can use pesticide.io to demonstrate this -->
 
