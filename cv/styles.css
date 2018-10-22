@@ -1,18 +1,20 @@
 /* Global Styles */
 
 html {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #301C1C;
     margin: 0;
     color: #fff;
+    background-image: url('image-name.jpg');
 }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,8 +31,14 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #fff;
     border-bottom: 3px solid #846666;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
     header div {
         display: inline-block;
@@ -51,7 +59,10 @@ header {
 /* Main */
 
 main {
-    padding: 0 30px 30px 30px;
+    margin-top: 150px !important;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    z-index: 0;
 }
     main section h2 {
         color: #846666;
