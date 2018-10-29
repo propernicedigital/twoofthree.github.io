@@ -96,3 +96,34 @@ Think of a group of people working together, e.g. to make a car, a newspaper, a 
     	color: red;
    }  
 ```
+
+## CSS Selectors
+
+- Classes
+- ID's
+
+## Frameworks
+
+Also referred to as “CSS frameworks,” these are packages containing pre-written, standardized code in files and folders. They give you a base to build on while still allowing flexibility with the final design. Typically, front-end frameworks contain the following components:
+
+* A grid which makes it simple to organize the design elements of your website
+* Defined font styles and sizing that varies based on its function (different typography for headings versus paragraphs, etc.)
+* Pre-built website components like side panels, buttons, and navigation bars
+Depending on the specific framework you choose, there’s a lot more they are capable of as well.
+
+### Why Use One
+There are a lot of good reasons to use a front-end framework instead of starting all your code from scratch:
+
+* Save time! Obviously, if you’re writing every single line of code by yourself, it’s going to take a lot longer to launch your website. Frameworks can help get you started with the basics.
+* Add extra components that you might not have otherwise. It’s always nice to have the option to tack on another button or two without creating any extra hassle for yourself.
+* Know for sure that the code works. Instead of spending a lot of time writing your own code only to discover that it doesn’t work (or isn’t compatible with 60% of web browsers), you’ll know that you’re using pre-tested, functional code.
+
+**We'll use bootstrap**
+
+- Add bootstrap 4 CSS CDN to your homepage above your stylesheet
+- Teach the grid system
+- Create html elements for your portfolio page
+
+## Exercise two
+- Hide the first view
+- Begin adding the next page elements for the app, add the list view area

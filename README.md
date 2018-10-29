@@ -7,8 +7,11 @@
 3. Digging deep into CSS & intro to dev tools (Add elements do your portfolio)
 4. Recap questionnaire / APP Exercise (HTML elements) / Selectors / Frameworks (bootstrap)
 5. App Exercise (Style elements)
-6. Digging deep into javascript / jQuery
-7. 
+6. Responsive websites
+7. Digging deep into javascript / jQuery
+8. Automating front end tasks / SCSS
+9. Accessibility & SEO Friendly code
+10. Optimization 
 
 ### License
 
