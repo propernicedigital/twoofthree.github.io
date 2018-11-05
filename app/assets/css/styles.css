@@ -18,10 +18,12 @@ header {
     width: 100%;
     background-color: #ccc;
     padding: 15px;
+    z-index: 100;
 }
     header h1 {
         margin: 0;
     }
+
 
 
 /* main */
@@ -78,14 +80,18 @@ button {
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
+    .item:last-of-type {
+        border-bottom: 0;
+    }
     .item:after {
         content: '';
         display: block;
         clear: both;
     }
     .item .image {
-        float: left;
         width: 30%;
+        display: inline-block;
+        vertical-align: top;
     }
         .item .image img {
             max-width: 100%;
@@ -94,9 +100,19 @@ button {
     .item .info {
         display: inline-block;
         width: 70%;
-        float: right;
         padding: 0 15px;
+        margin-left: -5px;
     }
         .item .info h3 {
             margin-top: 0;
         }
+
+#full-item-view {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1.2;
+}
+    #full-item-view .image img {
+        max-width: 100%;
+        height: auto;
+    }

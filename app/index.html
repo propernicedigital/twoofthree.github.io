@@ -19,40 +19,62 @@
         </h1>
     </header>
     <main>
-        <section>
-            <p>
-                Find a candidate you're looking for by Select a category from the dropdown below
-            </p>
-        </section>
-        <section>
-            <form>
-                <div id="filter" class="select">
-                    <select>
-                        <option>Please select</option>
-                        <option value="designer">Designer</option>
-                        <option value="developer">Developer</option>
-                        <option value="project-manager">Project Manager</option>
-                    </select>
-                </div>
-                <button>Find candidate</button>
-            </form>
-        </section>
-        <section>
-            <h2>Showing results for <span id="result-type">Developer</span></h2>
-
-            <div id="filtered-data">
-                <div class="item">
-                    <div class="image">
-                        <img src="assets/images/alex-fox.jpg" alt="Alex fox bio" />
+        <div id="results-list">
+            <section>
+                <p>
+                    Find a candidate you're looking for by Select a category from the dropdown below
+                </p>
+            </section>
+            <section>
+                <form>
+                    <div id="filter" class="select">
+                        <select>
+                            <option>Please select</option>
+                            <option value="designer">Designer</option>
+                            <option value="developer">Developer</option>
+                            <option value="project-manager">Project Manager</option>
+                        </select>
                     </div>
-                    <div class="info">
-                        <h3>Alex Fox</h3>
-                        <p>Alex fox is a web developer based in London</p>
+                    <button id="filter-data">Find candidate</button>
+                </form>
+            </section>
+            <section>
+                <h2>Showing results for <span id="result-type">Developer</span></h2>
+                <div id="filtered-data">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/alex-fox.jpg" alt="Alex fox bio" />
+                        </div>
+                        <div class="info">
+                            <h3>Alex Fox</h3>
+                            <p>Alex fox is a web developer based in London</p>
+                            <button id="go-to-item" type="button">Read more</button>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </div>
+        <div id="full-item-view"  style="display: none;">
+            <button id="back-to-start" type="button">Go back</button>
+            <div class="image">
+                <img src="assets/images/alex-fox.jpg" alt="Alex fox bio" />
             </div>
-        </section>
+            <div class="info">
+                <h3>Alex Fox</h3>
+                <p>
+                    Aenean eleifend libero condimentum, laoreet justo quis, gravida arcu. Aliquam sem nisl, ullamcorper pellentesque tincidunt et, mollis sed dui. Vestibulum in justo ac justo ultricies vulputate. Proin vitae nunc imperdiet augue feugiat varius. Sed faucibus mauris ut lacus placerat ultricies. Curabitur aliquam massa et ante blandit, ut posuere velit imperdiet. Mauris dapibus suscipit nisi, nec maximus sem consequat finibus.
+                </p>
+            </div>
+        </div>
     </main>
+
+
+    <div class="div-1 column">
+
+    </div>
+    <div class="div-2 column">
+
+    </div>
     <!-- Example JS link -->
     <script src="app.js"></script>
   </body>
