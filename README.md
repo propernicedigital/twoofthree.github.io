@@ -4,14 +4,14 @@
 
 1. What is a FEWD? Tools Setup
 2. Digging deep into HTML
-3. Digging deep into CSS & intro to dev tools (Add elements do your portfolio)
-4. Recap questionnaire / APP Exercise (HTML elements) / Selectors / Frameworks (bootstrap)
-5. App Exercise (Style elements)
-6. Responsive websites
-7. Digging deep into javascript / jQuery
-8. Automating front end tasks / SCSS
+3. Digging deep into CSS & intro to dev tools (add elements to app landing page)
+4. Recap questionnaire / add elements to app (second / third section) / Selectors / learn about html / css blocks and structuring a page
+5. App Exercise (Style elements) / finish off app sections
+6. Digging deep into javascript / jQuery / JSON - change json file to your app's data
+7. Frameworks - add elements to portfolio
+8. Responsive design and media queries
 9. Accessibility & SEO Friendly code
-10. Optimization 
+10. Optimization
 
 ### License
 

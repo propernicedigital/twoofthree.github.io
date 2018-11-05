@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Hello, world!</title>
+    <title>Recrooti</title>
   </head>
   <body>
     <header>
@@ -21,15 +21,12 @@
     <main>
         <section>
             <p>
-                Find a candidate to fill a roll you're looking for
-            </p>
-            <p>
-                Select a category from the dropdown below
+                Find a candidate you're looking for by Select a category from the dropdown below
             </p>
         </section>
         <section>
             <form>
-                <div class="select">
+                <div id="filter" class="select">
                     <select>
                         <option>Please select</option>
                         <option value="designer">Designer</option>
@@ -39,6 +36,21 @@
                 </div>
                 <button>Find candidate</button>
             </form>
+        </section>
+        <section>
+            <h2>Showing results for <span id="result-type">Developer</span></h2>
+
+            <div id="filtered-data">
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/images/alex-fox.jpg" alt="Alex fox bio" />
+                    </div>
+                    <div class="info">
+                        <h3>Alex Fox</h3>
+                        <p>Alex fox is a web developer based in London</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Example JS link -->

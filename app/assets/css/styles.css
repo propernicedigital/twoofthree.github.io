@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'open sans', sans-serif;
 }
 
-
+.clearfix:after {
+    content: '';
+    display: block;
+}
 /* header */
 
 header {
@@ -61,3 +67,36 @@ button {
     margin: 15px auto;
     width: 100%;
 }
+
+#result-type {
+    color: #406fa9;
+}
+
+.item {
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+    .item:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .item .image {
+        float: left;
+        width: 30%;
+    }
+        .item .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    .item .info {
+        display: inline-block;
+        width: 70%;
+        float: right;
+        padding: 0 15px;
+    }
+        .item .info h3 {
+            margin-top: 0;
+        }
