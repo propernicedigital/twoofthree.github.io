@@ -2,16 +2,16 @@
 
 ## Curriculum
 
-1. What is a FEWD? Tools Setup
-2. Digging deep into HTML
-3. Digging deep into CSS & intro to dev tools (add elements to app landing page)
+1. What is a FEWD? Tools Setup,  Digging deep into HTML (Create CV)
+2. Further HTML / Digging deep into CSS & intro to dev tools (style CV)
+3. Start the app brief (add first sections)
 4. Recap questionnaire / add elements to app (second / third section) / Selectors / learn about html / css blocks and structuring a page
 5. App Exercise (Style elements) / finish off app sections
-6. Digging deep into javascript / jQuery / JSON - change json file to your app's data
-7. Frameworks - add elements to portfolio
-8. Responsive design and media queries
-9. Accessibility & SEO Friendly code
-10. Optimization
+6. Digging deep into javascript / JSON - change json file to your app's data, get that data in console
+8. jQuery - start looping through your data and filtering - finish app
+7. Frameworks - add elements to portfolio, Responsive design and media queries
+9. Accessibility & SEO Friendly code (clean up portfolio and make it accessible)
+10. Optimization (clean up app and portfolio and do optimization work)
 
 ### License
 
