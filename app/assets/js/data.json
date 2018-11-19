@@ -5,7 +5,7 @@
             "name": "Alex Fox",
             "short_description": "Alex fox is a web developer based in London",
             "long_description" : "Aenean eleifend libero condimentum, laoreet justo quis, gravida arcu. Aliquam sem nisl, ullamcorper pellentesque tincidunt et, mollis sed dui. Vestibulum in justo ac justo ultricies vulputate. Proin vitae nunc imperdiet augue feugiat varius. Sed faucibus mauris ut lacus placerat ultricies. Curabitur aliquam massa et ante blandit, ut posuere velit imperdiet. Mauris dapibus suscipit nisi, nec maximus sem consequat finibus.",
-            "thumbnail": "https://ibb.co/cmsRvA",
+            "thumbnail": "https://image.ibb.co/muio8V/me-square.jpg",
             "category": "developer"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Miles Davis",
             "short_description": "Miles Davis is a designer based in London",
             "long_description" : "Aenean eleifend libero condimentum, laoreet justo quis, gravida arcu. Aliquam sem nisl, ullamcorper pellentesque tincidunt et, mollis sed dui. Vestibulum in justo ac justo ultricies vulputate. Proin vitae nunc imperdiet augue feugiat varius. Sed faucibus mauris ut lacus placerat ultricies. Curabitur aliquam massa et ante blandit, ut posuere velit imperdiet. Mauris dapibus suscipit nisi, nec maximus sem consequat finibus.",
-            "thumbnail": "https://ibb.co/cmsRvA",
+            "thumbnail": "https://cdn.britannica.com/s:300x300/22/7922-004-E6D87AB4.jpg",
             "category": "designer"
         },
         {
@@ -21,8 +21,16 @@
             "name": "Brenda Lee",
             "short_description": "Brenda Lee is a project manager based in London",
             "long_description" : "Aenean eleifend libero condimentum, laoreet justo quis, gravida arcu. Aliquam sem nisl, ullamcorper pellentesque tincidunt et, mollis sed dui. Vestibulum in justo ac justo ultricies vulputate. Proin vitae nunc imperdiet augue feugiat varius. Sed faucibus mauris ut lacus placerat ultricies. Curabitur aliquam massa et ante blandit, ut posuere velit imperdiet. Mauris dapibus suscipit nisi, nec maximus sem consequat finibus.",
-            "thumbnail": "https://ibb.co/cmsRvA",
+            "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/71nfOIhFMHL._SL1066_.jpg",
             "category": "project-manager"
+        },
+        {
+            "id": 4,
+            "name": "Person 4",
+            "short_description": "Brenda Lee is a project manager based in London",
+            "long_description" : "Aenean eleifend libero condimentum, laoreet justo quis, gravida arcu. Aliquam sem nisl, ullamcorper pellentesque tincidunt et, mollis sed dui. Vestibulum in justo ac justo ultricies vulputate. Proin vitae nunc imperdiet augue feugiat varius. Sed faucibus mauris ut lacus placerat ultricies. Curabitur aliquam massa et ante blandit, ut posuere velit imperdiet. Mauris dapibus suscipit nisi, nec maximus sem consequat finibus.",
+            "thumbnail": "http://static4.uk.businessinsider.com/image/566331c2dd0895de738b47ff-1805-1353/web-developer-2.jpg",
+            "category": "developer"
         }
     ]
 }
