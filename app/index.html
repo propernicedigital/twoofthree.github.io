@@ -12,13 +12,14 @@
     <title>Recrooti</title>
   </head>
   <body>
-    <header>
+    <a href="#results-list" class="sr-only">Skip header</a>
+    <header role="banner">
         <h1>
             <i class="fa fa-users" aria-hidden="true"></i>
             Recrooti
         </h1>
     </header>
-    <main>
+    <main role="main">
         <div id="results-list">
             <section>
                 <p>
@@ -27,8 +28,9 @@
             </section>
             <section>
                 <form>
-                    <div id="filter" class="select">
-                        <select>
+                    <div id="filter" class="select" role="search">
+                        <label class="sr-only" for="category-filter">Select a job role</label>
+                        <select id="category-filter" name="category-filter">
                             <option>Please select</option>
                             <option value="designer">Designer</option>
                             <option value="developer">Developer</option>
@@ -51,7 +53,7 @@
                 <img src="" alt="" />
             </div>
             <div class="info">
-                <h3></h3>
+                <h3>more info</h3>
                 <div class="long-description"></div>
             </div>
         </div>
