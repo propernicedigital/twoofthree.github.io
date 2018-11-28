@@ -1,5 +1,4 @@
 // Firebase
-
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyDoTPN6KdKDzyl4RKwoZ9pbsTCp2ee3Yws",
@@ -16,7 +15,9 @@ var dataRef = dbRef.ref('candidates');
 var data = [];
 dataRef.once('value').then(function(snapshot) {
     data = snapshot.val();
+    console.log(data);
 });
+
 
 function search(nameKey, dataArray){
     var filteredData = [];
@@ -28,19 +29,15 @@ function search(nameKey, dataArray){
     showData(filteredData);
 }
 
-
-function getIndividualDataItem(id, dataArray){
-    var dataItem = [];
-    for (var i=0; i < dataArray.length; i++) {
-        if (dataArray[i].id === id) {
-            dataItem.push(dataArray[i])
-        }
+function showData(filteredData) {
+    var finishedData = "";
+    for (var n=0; n < filteredData.length; n++) {
+        finishedData += buildHtml(filteredData[n]);
     }
-    $("#full-item-view .image img").attr("src", dataItem[0].thumbnail)
-    $("#full-item-view .image img").attr("alt", dataItem[0].name + " bio")
-    $("#full-item-view .info h3").text(dataItem[0].name)
-    $("#full-item-view .info .long-description").text(dataItem[0].long_description)
+    console.log(finishedData);
+    $("#filtered-data").html(finishedData);
 }
+
 
 function buildHtml(item) {
     var html = "<div class='item'>"
@@ -56,12 +53,17 @@ function buildHtml(item) {
     return html;
 }
 
-function showData(filteredData) {
-    var finishedData = "";
-    for (var n=0; n < filteredData.length; n++) {
-        finishedData += buildHtml(filteredData[n]);
+function getIndividualDataItem(id, dataArray){
+    var dataItem = [];
+    for (var i=0; i < dataArray.length; i++) {
+        if (dataArray[i].id === id) {
+            dataItem.push(dataArray[i])
+        }
     }
-    $("#filtered-data").html(finishedData);
+    $("#full-item-view .image img").attr("src", dataItem[0].thumbnail)
+    $("#full-item-view .image img").attr("alt", dataItem[0].name + " bio")
+    $("#full-item-view .info h3").text(dataItem[0].name)
+    $("#full-item-view .info .long-description").text(dataItem[0].long_description)
 }
 
 $("#filter-data").on("click", function() {
@@ -69,7 +71,7 @@ $("#filter-data").on("click", function() {
     var categoryText = $("#filter select option[value=" + category + "]").text();
     search(category, data);
     $("h2").fadeIn();
-    $("#result-type").text(categoryText)
+    $("#result-type").text(categoryText);
 });
 
 $("#filtered-data").on("click", ".go-to-item", function() {
@@ -83,3 +85,6 @@ $("#back-to-start").on("click", function() {
     $("#results-list").show();
     $("#full-item-view").hide();
 })
+
+
+// jquery

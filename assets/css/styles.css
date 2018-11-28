@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
 /* Header */
 .center {
     text-align: center;
@@ -41,6 +31,13 @@ header {
 
 /* #intro */
 
+#html {
+    transition: opacity .5s ease-in-out;
+}
+#html.on-hover {
+    opacity: .6;
+}
+
 #intro {
     background-color: #00b8ff;
     color: #fff;
@@ -70,16 +67,40 @@ main div {
         width: 30%;
         vertical-align: top;
     }
-        .column-1:before {
-            content: "";
-            width: 40px;
-            height: 40px;
-            background-color: red;
-            display: block;
-        }
+
     .column-2 {
         float: left;
         border: 1px solid #000;
         width: 70%;
         vertical-align: top;
     }
+
+@media(max-width: 1024px) {
+
+    #intro {
+        background-color: #ff0000;
+    }
+
+    .column-1 {
+        width: 75%;
+    }
+
+    .column-2 {
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .column-1 {
+        width: 100%;
+        float: none;
+        margin-bottom: 100px;
+    }
+    .column-2 {
+        width: 100%;
+        float: none;
+    }
+
+}
