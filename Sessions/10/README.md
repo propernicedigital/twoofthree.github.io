@@ -30,7 +30,7 @@ The best way to test your websites performance is using googles [Page speed insi
 - Requests
 - "Above the fold" loading
 
-> Let's run our first text on your github pages web app url
+> Let's run our first text on ytinyour github pages web app url
 
 ### How to optimize your website or app
 
